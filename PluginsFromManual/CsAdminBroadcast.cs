@@ -1,5 +1,3 @@
-using Oxide.Rust.Libraries;
-
 namespace Oxide.Plugins
 {
     [Info("CsAdminBroadcast", "Bas", "0.1.0")]
@@ -16,8 +14,7 @@ namespace Oxide.Plugins
                     }                    
                 }
                 string userID = "0";
-                PrintToChat(name+" "+msg, userID);//c# uses PrintToChat, not rust.BroadcastChat
-                Libraries.BroadcastChat(name+" "+msg, userID);//c# uses PrintToChat, not rust.BroadcastChat
+                PrintToChat(name+" "+msg, userID);
             }
         }            
     }

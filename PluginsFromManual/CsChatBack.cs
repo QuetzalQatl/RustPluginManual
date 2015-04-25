@@ -1,7 +1,7 @@
 namespace Oxide.Plugins
 {
-    [Info("CsHelloChat", "Bas", "0.1.0")]
-    class CsHelloChat : RustPlugin
+    [Info("CsChatBack", "Bas", "0.1.0")]
+    class CsChatBack : RustPlugin
     {
         [ChatCommand("hellocs")]
         void chat_hello(BasePlayer player, string cmd, string[] args)

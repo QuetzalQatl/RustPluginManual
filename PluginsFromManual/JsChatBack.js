@@ -1,7 +1,7 @@
-var JsHelloChat = {
-    Title : "JsHelloChat",
-    Version : V(0, 1, 0),
+var JsChatBack = {
+    Title : "JsChatBack",
     Author : "Bas",
+    Version : V(0, 1, 0),
     Init: function() {
         command.AddChatCommand("hellojs", this.Plugin, "chat_hello");
     },

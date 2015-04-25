@@ -1,10 +1,10 @@
-PLUGIN.Title = "LuaHelloChat"
+PLUGIN.Title = "LuaChatBack"
 PLUGIN.Author = "Bas"
 PLUGIN.Version = V(0, 1, 0)
 function PLUGIN:Init()
-    command.AddChatCommand("broadcastlua", self.Object, "chat_broadcast")
+    command.AddChatCommand("hellolua", self.Object, "chat_hello")
 end
-function PLUGIN:chat_broadcast(player, cmd, args)
+function PLUGIN:chat_hello(player, cmd, args)
     rust.SendChatMessage(player, "Hello back from Lua", null, "0")
     --just some additional information you can use when handling the chat command
     print('player.displayName='..player.displayName)
